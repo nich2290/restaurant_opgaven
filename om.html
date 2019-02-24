@@ -21,6 +21,22 @@ header nav a:visited {
     color: white;
     font-size: 7vw;
 }
+       @font-face {
+    font-family: 'chowfun';
+    src: url('fonts/chowfun_-webfont.woff2') format('woff2'),
+         url('fonts/chowfun_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebasneue';
+    src: url('fonts/bebasneue-regular-webfont.woff2') format('woff2'),
+         url('fonts/bebasneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /* mouse over link */
 header nav a:active {
     color: red;
@@ -43,7 +59,10 @@ header {
     z-index: 100;
 
 }
-
+.column_right h3 {
+                font-size: 1.3em;
+                font-family: 'bebasneue';
+            }
 
 
         header ul {
@@ -238,12 +257,13 @@ header nav a {
         .column_right {
             width: 30vw;
             margin-left: 0.5em;
+            margin-top: 1vw;
 
 
         }
             .column_right h3 {
-                font-size: 2.5em;
-                font-family: 'BebasNeue-Regular';
+                font-size: 1.7em;
+                font-family: 'bebasneue';
             }
             .column_right p {
                 font-size: 1.2em;
