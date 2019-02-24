@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="DA">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi House</title>
+    <style>
+        img {
+            width: 100%;
+        }
+
+        /* TEST  */
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+    /* NAVIGATION */
+        header nav a:link,
+header nav a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#menuknap {
+    color: white;
+    font-size: 7vw;
+}
+/* mouse over link */
+header nav a:active,
+header nav a:hover {
+    color: red;
+
+
+}
+
+header nav a:hover {
+    color: red;
+    transition: all 0.3s ease;
+
+
+}
+
+header {
+    position: fixed;
+    background-color: black;
+
+    width: 100%;
+    height: 40px;
+    z-index: 100;
+
+}
+
+
+
+        header ul {
+            list-style-type: none;
+
+
+
+        }
+
+header nav a {
+    margin: 0 0 0rem 0;
+    font-family: 'linux';
+    font-size: 1rem;
+    font-weight: 100;
+    padding:0.1rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vw;
+
+
+
+}
+        .blur {
+                filter: blur(4px);
+            }
+        header nav {
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+
+
+
+
+
+    /* NAVIGATION SLUT */
+
+    /* FORM STYLING */
+        #indhold {
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        }
+        #indhold h3 {
+            font-family: 'BebasNeue-Regular';
+
+        }
+        .formgroup:nth-child(1) {
+            grid-column: 2 / 4;
+            grid-row: 3/4;
+        }
+        .formgroup:nth-child(2) {
+            grid-column: 2 / 4;
+            grid-row: 2/3;
+        }
+        .formgroup:nth-child(3) {
+            grid-column: 2 / 4;
+            grid-row: 1/;
+        }
+        .formgroup:nth-child(4){
+                grid-column: 6;
+                grid-row: 1;
+            }
+        .formgroup:nth-child(5){
+                grid-column: 4;
+                grid-row: 4;
+
+            }
+        label, input[type=text], input[type=email], input[type=password], input[type=submit]{
+            padding: 0.5em;
+            g
+
+
+        }
+        input[type=text], input[type=email], input[type=password]{
+            border: 1px solid black;
+        }
+
+
+    /* FORM STYLING SLUT */
+        .retter {
+            border-width: 5px;
+            border: 3px solid orange;
+            padding: 10px;
+            margin: 0.2em;
+
+        }
+
+        #splash {
+            width: 100%;
+            height: 1080px;
+            position: relative;
+
+
+
+
+
+
+            background-image: url(img/web-background.jpg);
+            background-color: rgba(255, 165, 0, 0.19);
+
+
+
+        }
+
+
+
+
+
+
+
+        body {
+            margin: 0;
+
+        }
+
+        .main{
+            text-align: center;
+            padding-top: 35vw;
+            margin-top: 0;
+            font-size: 2.7em;
+            font-family: chowfun;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+
+            font-weight: 200;
+        }
+
+
+
+        .data-container {
+            margin-left: 2em;
+            margin-right: 2em;
+
+        }
+
+
+
+
+
+
+        #luk button {
+            background-color: black;
+            color: white;
+
+        }
+
+        .transition {
+            transition: ease-in 2s;
+        }
+
+
+
+        body {
+            background-color: lightgray;
+            overflow: scroll;
+
+        }
+
+        .menu {
+            text-align: center;
+        }
+
+        .valgt {
+            background-color: orange;
+            transition: ease-in 0.5s;
+        }
+
+        .data-container {
+            display: grid;
+
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .boxcontainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 5em;
+
+
+
+        }
+        .box {
+            width: 10em;
+            height: 4em;
+            border: 3px solid white;
+            margin-top: 4vw;
+            background-color: transparent;
+            color: white;
+            font-size: 1em;
+
+
+
+
+        }
+        .box:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+}
+
+
+
+        h2 {
+            color: white;
+            text-align: center;
+        }
+        /* SINGLE VIEW */
+
+        #popup {
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            overflow: scroll;
+            z-index: 100;
+
+        }
+
+        .singleret img {
+            max-width: 50%;
+        }
+
+        .singleret {
+            padding: 1rem;
+
+
+        }
+
+        .skjul {
+            display: none;
+        }
+
+        #indhold {
+            background-color: lightgrey;
+            width: 70vw;
+            margin: 4rem auto;
+        }
+
+
+
+        #luk button {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+
+        }
+
+        @media only screen and (min-width:600px) {
+
+
+
+
+            /*NAVIGATION SLUT*/
+            .data-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .main {
+                font-size: 4em;
+                padding-top: 18vw;
+            }
+
+            header nav a {
+                margin-top: 1vw;
+            }
+           /* FORM STYLING */
+            #indhold {
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        }
+        .formgroup:nth-child(1) {
+            grid-column: 3 / 4;
+            grid-row: 2/3;
+        }
+        .formgroup:nth-child(2) {
+            grid-column: 3 / 4;
+            grid-row: 3/4;
+        }
+        .formgroup:nth-child(3) {
+            grid-column: 3 / 5;
+            grid-row: 1/;
+        }
+        .formgroup:nth-child(4){
+                grid-column: 6;
+                grid-row: 1;
+            }
+
+
+            /* FORM STYLING SLUT */
+        }
+
+        @media only screen and (min-width:1000px) {
+
+               header {
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            background-color: black;
+            height: 45px;
+
+        }
+    header nav {
+        margin: 1rem 0 1rem;
+    }
+        ul {
+            text-align: center;
+
+        }
+
+    .hidden {
+
+        opacity: 1;
+    }
+
+    header nav a {
+
+        color: white;
+        font-family: 'linux';
+        font-weight: 100;
+        padding: 0 4rem;
+        font-size: 1.2em;
+        text-decoration-line: none;
+        margin-top: -0.2vw;
+
+
+
+
+    }
+
+    header nav a:last-child {
+        border-right: none;
+    }
+
+    header ul li {
+        display: inline;
+    }
+
+            .blur {
+                filter: blur(4px);
+            }
+
+             #indhold {
+            position:relative;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        }
+            #indhold h3 {
+                font-size: 2em;
+            }
+        .formgroup:nth-child(1) {
+            grid-column: 3 / 4;
+            grid-row: 2/3;
+        }
+        .formgroup:nth-child(2) {
+            grid-column: 3 / 4;
+            grid-row: 3/4;
+        }
+        .formgroup:nth-child(3) {
+            grid-column: 3 / 5;
+            grid-row: 1/;
+        }
+        .formgroup:nth-child(4){
+                grid-column: 6;
+                grid-row: 1;
+            }
+        .formgroup:nth-child(5){
+                grid-column: 4;
+                grid-row: 4;
+                margin-top: -2vw;
+            }
+
+            /* NAVIGATION SLUT*/
+
+            .data-container {
+                grid-template-columns: repeat(3, 1fr);
+
+            }
+            .main {
+                font-size: 6em;
+                padding-top: 8vw;
+            }
+
+            .boxcontainer {
+                flex-direction: row;
+                justify-content: center;
+
+            }
+            .box {
+                margin-left: 2em;
+                margin-right: 2em;
+                font-family: 'BebasNeue-Regular';
+                font-size: 1.2em
+            }
+            #logo {
+
+                justify-content: center;
+                display: flex;
+                margin-bottom: -6em;
+                margin-top: -4em;
+
+
+            }
+            #logo img {
+                width: 800px;
+                height: 400px
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="popup" class="skjul">
+
+        <div id="indhold">
+
+            <div class="formgroup">
+                <label>Username:</label>
+                <input type="text" placeholder="Enter username">
+
+            </div>
+            <div class="formgroup">
+                <label>Password:</label>
+                <input type="password" placeholder="Enter password">
+            </div>
+            <div class="formgroup">
+                <h3>Log in to book a table</h3>
+            </div>
+             <div id="luk" class="formgroup">
+            <button>X</button>
+        </div>
+        <div class="formgroup">
+            <button>Log in</button>
+        </div>
+        </div>
+    </div>
+    <div id="splash">
+
+
+<header>
+
+      <nav>
+
+
+            <a  class="one" href="index.html">home</a>
+
+
+
+            <a class="two" href="menu.html">menu</a>
+                <a class="three" href="om.html">about</a>
+
+
+
+
+        </nav>
+    </header>
+
+
+        <h1 class="main"> SUSHI HOUSE </h1>
+        <div class="logocontainer">
+        <div id="logo">
+            <img src="img/logo.png">
+        </div>
+        </div>
+        <div class="boxcontainer">
+            <button id="booking" class="box">
+               BOOK A TABLE
+
+            </button>
+            <button class="box">
+            TAKE AWAY
+
+            </button>
+            <a href="menu.html">
+            <button class="box">
+               MENU CARD
+
+            </button></a>
+
+        </div>
+    </div>
+     <script>
+
+          console.log("start");
+         document.querySelector("#splash")
+         document.querySelector("#booking").addEventListener("click", vindue);
+
+
+                    function vindue() {
+                        document.querySelector("#splash").classList.add("blur");
+                        document.querySelector("#popup").style.display = "block";
+
+                        document.querySelector("#popup #luk").addEventListener("click", close);
+                        document.querySelector("body").style.overflow = "hidden";
+                    }
+
+                    function close() {
+                        document.querySelector("#popup").style.display = "none";
+                        document.querySelector("body").style.overflow = "scroll";
+                        normal();
+                    }
+
+                function normal() {
+                    document.querySelector("#splash").classList.remove("blur");
+                }
+
+
+</script>
+
+
+</body>
+
+</html>

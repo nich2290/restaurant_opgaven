@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        img {
+            width: 100%;
+        }
+
+    /* NAVIGATION */
+        header nav a:link,
+header nav a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#menuknap {
+    color: white;
+    font-size: 7vw;
+}
+/* mouse over link */
+header nav a:active,
+header nav a:hover {
+    color: red;
+
+
+}
+
+header nav a:hover {
+    color: red;
+    transition: all 0.3s ease;
+    text-decoration-line: overline solid red;
+
+}
+
+header {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    z-index: 100;
+
+}
+
+
+
+
+
+header nav a {
+    margin: 0 0 0rem 0;
+    font-family: 'linux';
+    font-size: 1rem;
+    font-weight: 100;
+    padding:0.1rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vw;
+
+
+
+}
+        header nav {
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+
+
+
+
+         @media only screen and (min-width:800px) {
+
+
+        header {
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            background-color: black;
+            height: 45px;
+
+        }
+    header nav {
+        margin: 1rem 0 1rem;
+    }
+        ul {
+            text-align: center;
+
+        }
+
+    .hidden {
+
+        opacity: 1;
+    }
+
+    header nav a {
+
+        color: white;
+        font-family: 'linux';
+        font-weight: 100;
+        text-decoration-line: none;
+
+
+
+
+    }
+
+    header nav a:last-child {
+        border-right: none;
+    }
+
+    header ul li {
+        display: inline;
+    }
+
+
+        }
+    /* NAVIGATION SLUT */
+        .retter {
+            border-width: 5px;
+            background-color: rgba(211, 211, 211, 0.65);
+            padding: 10px;
+            margin: 0.2em;
+            max-width: 500px;
+
+
+        }
+
+        #splash {
+            width: 100%;
+            height: 1080px;
+            position: relative;
+
+
+
+
+
+
+
+            background-color: rgba(255, 165, 0, 0.19);
+
+
+
+        }
+
+        #splash img {
+            opacity: 20%;
+        }
+
+
+
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("img/web_om_baggrund.jpg");
+            background-size: cover;
+            background-attachment:fixed;
+            height: 100%;
+            width: 100%;
+
+        }
+
+
+
+        h1 {
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: 200;
+        }
+        h2 {
+            font-family: 'BebasNeue-Regular';
+            font-size: 2em;
+        }
+        article {
+            animation-name: fade-in;
+            animation-duration: 10s;
+        }
+
+        .data-container {
+            margin-left: 2em;
+            margin-right: 2em;
+            animation-name: fade-in;
+            animation-duration: 5s;
+            display:flex;
+            justify-content: center;
+            position: relative;
+        }
+
+
+
+        h3 {
+            text-align: center;
+            margin-top: 0;
+            padding-top: 60px;
+            font-size: 4em;
+            font-family: minirus;
+
+
+
+        }
+
+
+
+
+        .transition {
+            transition: ease-in 2s;
+        }
+
+        button {
+            padding: 1em;
+            margin-bottom: 1em;
+            background-color: white;
+            font-family: 'LinLibertine_RB';
+            font-size: 1.1em;
+            opacity: 0.6;
+
+        }
+
+        body {
+            background-color: lightgray;
+            overflow: scroll;
+
+        }
+
+        .menu {
+            text-align: center;
+        }
+
+        .valgt {
+            opacity: 1;
+            transition: ease-in 0.5s;
+        }
+
+        .data-container {
+            display: grid;
+
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        /* SINGLE VIEW */
+
+        #popup {
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            overflow: scroll;
+
+
+        }
+
+        .singleret img {
+            max-width: 50%;
+        }
+
+        .singleret {
+            padding: 1rem;
+
+
+        }
+
+        .skjul {
+            display: none;
+        }
+
+        #indhold {
+            min-height: 50vh;
+            background-color: rgba(211, 211, 211, 0.56);
+            width: 70vw;
+            margin: 4rem auto;
+
+        }
+
+        #luk {
+            position: absolute;
+            right: 2rem;
+            padding-right: 2rem;
+
+        }
+
+        #luk button {
+            font-size: 2rem;
+            padding: 1rem 2rem;
+            cursor: pointer;
+
+        }
+        .menutitle {
+            display: none;
+        }
+        .menu {
+            padding-top: 5em;
+
+
+        }
+
+        @media only screen and (min-width:600px) {
+            .data-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            header nav a {
+                margin-top: 1vw;
+            }
+
+        }
+
+        @media only screen and (min-width:1000px) {
+            .data-container {
+                grid-template-columns: repeat(2, 1fr);
+                justify-items: center;
+
+
+
+            }
+                    header {
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            background-color: black;
+            height: 45px;
+
+        }
+    header nav {
+        margin: 1rem 0 1rem;
+    }
+        ul {
+            text-align: center;
+
+        }
+
+    .hidden {
+
+        opacity: 1;
+    }
+
+    header nav a {
+
+        color: white;
+        font-family: 'linux;
+        font-weight: 100;
+        padding: 0 4rem;
+        font-size: 1.2em;
+        text-decoration-line: none;
+        margin-top: -0.2vw;
+
+
+
+
+    }
+
+    header nav a:last-child {
+        border-right: none;
+    }
+
+    header ul li {
+        display: inline;
+    }
+            .menutitle {
+                padding-top: 2em;
+                color: white;
+                display: none;
+            }
+            .menu {
+                padding-top: 5em;
+            }
+            .retter {
+
+
+
+            }
+            #luk {
+
+            right: 12em;
+            padding-right: 2rem;
+            top: 5em;
+
+        }
+            #luk button {
+                border: 2px solid black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="popup" class="skjul">
+        <div id="luk">
+            <button>X</button>
+        </div>
+        <div id="indhold"></div>
+    </div>
+
+<header>
+      <nav>
+
+
+            <a href="index.html">home</a>
+
+
+
+            <a href="menu.html">menu</a>
+                <a href="om.html">about</a>
+
+
+
+
+        </nav>
+    </header>
+
+
+
+
+
+    <h1 class="menutitle">Menu</h1>
+    <div class="menu">
+
+        <button class="filter" data-hold="forretter">Appetizers</button>
+        <button class="filter" data-hold="hovedretter">Main Courses</button>
+        <button class="filter" data-hold="desserter">Desserts</button>
+        <section class="data-container transition"></section>
+
+
+
+    </div>
+
+
+
+    <script>
+        let alleRetter = [];
+        let filter = "alle";
+        document.addEventListener("DOMContentLoaded", hentJson);
+        const modtager = document.querySelector(".data-container");
+        async function hentJson() {
+            const myJson = await fetch("https://mandalskeawebspace.dk/claude_php/clean_up_spreadsheet.php?id=1p58Etpsuw7zrRsLY4jWArqv4u2_4DfEEYzVonrMfh60");
+            console.log(myJson);
+            alleRetter = await myJson.json();
+            console.log(alleRetter);
+            visRetter();
+        }
+
+        function visRetter() {
+            modtager.innerHTML = "";
+            alleRetter.forEach(ret => {
+                if (filter == "alle" || filter == ret.kategori) {
+
+
+                    let template = `
+                    <article class="retter">
+                        <img src="img/${ret.billede}.jpg">
+                        <h2>${ret.navn}</h2>
+                        <p>${ret.kort}</p>
+                        <p>Pris: ${ret.pris},-</p>
+                    </article>
+                `;
+                    modtager.insertAdjacentHTML("beforeend", template);
+                    modtager.lastElementChild.addEventListener("click", () => {
+                        visSingle(ret);
+                    });
+
+                    function visSingle(ret) {
+                        document.querySelector("#indhold").innerHTML = `
+                            <article class="singleret">
+                                <h2>${ret.navn}</h2>
+                                <img src="img/${ret.billede}.jpg">
+                                <p>${ret.lang}</p>
+
+
+
+                                </article>
+                        `;
+                        document.querySelector(".menu").classList.add("skjul");
+                        document.querySelector("#popup").style.display = "block";
+                        document.querySelector("#popup #luk").addEventListener("click", close);
+                        document.querySelector("body").style.overflow = "hidden";
+                    }
+
+                    function close() {
+                        document.querySelector("#popup").style.display = "none";
+                        document.querySelector("body").style.overflow = "scroll";
+                        document.querySelector(".menu").classList.remove("skjul");
+                    }
+                }
+            })
+        }
+        document.querySelectorAll(".filter").forEach(elm => {
+            elm.addEventListener("click", filtrering);
+
+        })
+
+        function filtrering() {
+            filter = this.getAttribute("data-hold");
+            document.querySelector("h1").textContent = this.textContent;
+            document.querySelectorAll(".filter").forEach(elm => {
+                elm.classList.remove("valgt");
+            });
+            this.classList.add("valgt");
+            visRetter();
+        }
+        visRetter();
+    </script>
+</body>
+
+</html>

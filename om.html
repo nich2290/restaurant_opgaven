@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi House</title>
+    <style>
+        img {
+            width: 100%;
+        }
+
+    /* NAVIGATION */
+        header nav a:link,
+header nav a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#menuknap {
+    color: white;
+    font-size: 7vw;
+}
+/* mouse over link */
+header nav a:active {
+    color: red;
+
+}
+
+
+header nav a:hover {
+    color: red;
+    transition: all 0.3s ease;
+
+}
+
+header {
+    position: fixed;
+    background-color: black;
+
+    width: 100%;
+    height: 40px;
+    z-index: 100;
+
+}
+
+
+
+        header ul {
+            list-style-type: none;
+
+
+
+        }
+
+header nav a {
+    margin: 0 0 0rem 0;
+    font-family: 'linux';
+    font-size: 1rem;
+    font-weight: 100;
+    padding:0.1rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vw;
+
+
+
+}
+        header nav {
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+
+
+
+
+
+    /* NAVIGATION SLUT */
+
+
+
+        #splash {
+            width: 100%;
+            height: 1080px;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            background-image: url(img/web_om_baggrund.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+
+
+
+
+
+
+
+
+
+        }
+
+               #omcontainer {
+
+            grid-column: 2/3;
+            grid-row: 4/5;
+            flex-direction:column;
+            background-color: rgba(211, 211, 211, 0.65);
+            margin-top: 5em;
+
+
+
+        }
+
+        .column_left {
+            width: 50vw;
+            margin-top: 3vw;
+            margin-left: 4vw;
+            margin-right: 3vw;
+
+        }
+        .column_right {
+            width: 50vw;
+            margin-left: 4vw;
+
+
+        }
+        .column_right p {
+
+        }
+
+
+
+
+
+        body {
+            margin: 0;
+
+        }
+
+
+
+        body {
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+        @media only screen and (min-width:600px) {
+            .data-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .main {
+                font-size: 4em;
+                padding-top: 18vw;
+            }
+
+             header nav a {
+                margin-top: 1vw;
+            }
+              #omcontainer {
+            display:flex;
+            grid-column: 2/3;
+            grid-row: 2/5;
+            flex-direction:row;
+
+            height: 50vw;
+
+        }
+
+        .column_left {
+            width: 30vw;
+            margin-top: 3vw;
+            margin-left: 3vw;
+            margin-right: 3vw;
+
+        }
+        .column_right {
+            width: 50vw;
+            margin-left: 2em;
+            margin-right: 2em;
+
+        }
+
+        }
+
+        @media only screen and (min-width:1000px) {
+            .data-container {
+                grid-template-columns: repeat(3, 1fr);
+
+            }
+            #splash {
+            width: 100%;
+            height: 1080px;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+
+
+
+
+
+
+
+
+
+
+        }
+                    #omcontainer {
+            display:flex;
+            grid-column: 5/6;
+            grid-row: 2/3;
+            flex-direction:row;
+            height: 49vw;
+
+
+        }
+
+        .column_left {
+            width: 30vw;
+            margin-top: 3vw;
+            margin-left: 3vw;
+
+        }
+
+        .column_right {
+            width: 30vw;
+            margin-left: 0.5em;
+
+
+        }
+            .column_right h3 {
+                font-size: 2.5em;
+                font-family: 'BebasNeue-Regular';
+            }
+            .column_right p {
+                font-size: 1.2em;
+                font-family: 'linux;
+            }
+                   header {
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            background-color: black;
+            height: 45px;
+
+        }
+    header nav {
+        margin: 1rem 0 1rem;
+    }
+        ul {
+            text-align: center;
+
+        }
+
+    .hidden {
+
+        opacity: 1;
+    }
+
+    header nav a {
+
+        color: white;
+        font-family: 'linux';
+        font-weight: 100;
+        padding: 0 4rem;
+        font-size: 1.2em;
+        text-decoration-line: none;
+        margin-top: -0.2vw;
+
+
+
+
+    }
+
+    header nav a:last-child {
+        border-right: none;
+    }
+            }
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <div id="splash">
+<header>
+
+      <nav>
+
+
+            <a href="index.html">home</a>
+
+
+
+            <a href="menu.html">menu</a>
+                <a href="om.html">about</a>
+
+
+
+
+        </nav>
+    </header>
+    <div id="omcontainer">
+        <div class="column_left">
+            <img src="img/chef.jpg">
+        </div>
+        <div class="column_right">
+            <h3>THE STORY BEHIND SUSHI HOUSE</h3>
+            <p>
+                Told by Hana Kaninki, owner and chef.</p>
+                <p>
+                It all started when I – as a child – had a great interest and passion for food. Because of this it did not take me long to decide that I wanted to become a chef. Initially, this led to me educating from French cuisine. When I had served my apprenticeship as a chef, I had a burning desire to be independent but I did not want to have any investors involved; I wanted to succeed on my own.
+
+                I therefore announced that I would open a sushi restaurant in Hokkaido but I was met with scepticism from my surroundings. This did not bother me, on the contrary; the more people doubted, the more I wanted it.
+                Originally, the restaurant was to be located in Tokyo where I come from but it soon proved to be beyond economic reach since I was only in the early 20s and without any savings.
+       </p>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+    </script>
+</body>
+
+</html>
